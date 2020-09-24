@@ -77,7 +77,7 @@ public class ExperimentDAOImpl extends AbstractExperimentDAO {
     private final static String GET_RUNNING_EXP_COUNT = "SELECT count(*) FROM ExperimentTasks where state = :unfinishedState AND id < :lastTaskId";
 
     public static final String[] RES_NAME_ARR = { "Micro F1 score", "Micro Precision", "Micro Recall", "Macro F1 score",
-            "Macro Precision", "Macro Recall" };
+            "Macro Precision", "Macro Recall" , "InKB Macro F1 score", "InKB Macro Precision", "InKB Macro Recall", "InKB Micro F1 score", "InKB Micro Precision", "InKB Micro Recall"};
     public static final String ERROR_COUNT_NAME = "Error Count";
 
     static final String GET_RESULT_NAMES = "SELECT name FROM ResultNames";

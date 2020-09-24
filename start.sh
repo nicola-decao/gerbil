@@ -154,7 +154,7 @@ if [ ! -d "indexes/dbpedia" ]; then
 	if yesno "Should the index be downloaded (~1GB zipped, ~2GB extracted)? (yes/no): "; then
 		mkdir -p "indexes/dbpedia" || error "Could not create indexes/dbpedia directory"
 		file="indexes/dbpedia/dbpedia_index.zip"
-		url="http://139.18.2.164/mroeder/gerbil/dbpedia_index.zip"
+		url="https://hobbitdata.informatik.uni-leipzig.de/gerbil/dbpedia_index.zip"
 		echo "Downloading index ... ($url)"
 		curl --retry 4 -L -o "$file" "$url"
 
@@ -175,7 +175,7 @@ if [ ! -d "indexes/dbpedia_check" ]; then
 	if yesno "Should the index be downloaded (~0.3GB zipped, ~0.7GB extracted)? (yes/no): "; then
 		mkdir -p "indexes/dbpedia_check" || error "Could not create indexes/dbpedia_check directory"
 		file="indexes/dbpedia_check/dbpedia_check_index.zip"
-		url="http://139.18.2.164/mroeder/gerbil/dbpedia_check_index.zip"
+		url="https://hobbitdata.informatik.uni-leipzig.de/gerbil/dbpedia_check_index.zip"
 		echo "Downloading index ... ($url)"
 		curl --retry 4 -L -o "$file" "$url"
 
